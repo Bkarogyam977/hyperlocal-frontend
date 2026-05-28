@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* @theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+} */
+
+body {
+  background-color: #f9fafb;
+  color: #111827;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes slide-up {
+  from { transform: translateY(60px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+.animate-slide-up {
+  animation: slide-up 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes slideIn {
+
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+}
+
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+@keyframes marquee-up {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(-70%);
+  }
+}
+
+.animate-marquee-up {
+  display: flex;
+  flex-direction: column;
+  animation: marquee-up 7s linear infinite;
+}
