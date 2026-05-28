@@ -48,6 +48,7 @@ export default function Footer() {
     width="100%"
     height="100%"
     style={{ border: 0, borderRadius: '0.5rem' }}  // add radius directly to iframe
+    allowFullScreen
     loading="lazy"
     referrerPolicy="no-referrer-when-downgrade"
   ></iframe>
