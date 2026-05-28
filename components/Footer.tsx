@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="bg-black text-white pt-14 pb-8 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-6">
-        
+
         {/* COMPANY */}
         <div>
           <div className="flex items-center gap-2 mb-5">
@@ -43,15 +43,15 @@ export default function Footer() {
 
         {/* MAP (spans columns 4 and 5) */}
         <div className="md:col-span-2 w-[88%] h-64 ml-15 rounded-lg overflow-hidden border border-gray-700">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.717046496674!2d80.94616631504382!3d26.84669398315859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2f1c1f3b2a7%3A0x8f6e3f6f6f6f6f6f!2sLucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1716370000000!5m2!1sen!2sin"
-    width="100%"
-    height="100%"
-    style={{ border: 0, borderRadius: '0.5rem' }}  // add radius directly to iframe
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-  ></iframe>
-</div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.717046496674!2d80.94616631504382!3d26.84669398315859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2f1c1f3b2a7%3A0x8f6e3f6f6f6f6f6f!2sLucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1716370000000!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style={{ border: 0, borderRadius: '0.5rem' }}  // add radius directly to iframe
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
 
 
       </div>
