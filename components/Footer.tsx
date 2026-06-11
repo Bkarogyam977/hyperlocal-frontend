@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="bg-black text-white pt-14 pb-8 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-6">
-        
+
         {/* COMPANY */}
         <div>
           <div className="flex items-center gap-2 mb-5">
@@ -48,6 +48,7 @@ export default function Footer() {
     width="100%"
     height="100%"
     style={{ border: 0, borderRadius: '0.5rem' }}  // add radius directly to iframe
+    allowFullScreen
     loading="lazy"
     referrerPolicy="no-referrer-when-downgrade"
   ></iframe>

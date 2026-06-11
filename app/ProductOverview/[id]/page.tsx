@@ -23,8 +23,7 @@ export default function ProductOverviewPage() {
   const [selectedImage, setSelectedImage] = useState('');
 
   useEffect(() => {
-    //fetch(`http://127.0.0.1:8000/products/${id}`)
-    fetch(`https://hyper-api.arogyamission.com`)
+    fetch(`/api/backend/products/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setProduct(data);
