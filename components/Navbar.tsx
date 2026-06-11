@@ -29,11 +29,8 @@ export default function Navbar() {
  useEffect(() => {
   fetch("/api/menuList")
     .then((res) => res.json())
-    .then((data) => {
-      console.log("API Data:", data);
-
-      setSubmenus(data);
-    });
+    .then((data) => setSubmenus(Array.isArray(data) ? data : []))
+    .catch(() => {});
 }, []);
 
 
