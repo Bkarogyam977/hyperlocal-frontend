@@ -40,7 +40,8 @@ interface LedgerFilters {
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
-const API = (process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:8000') + '/wms';
+//const API = (process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:8000') + '/wms';
+const API = (process.env.NEXT_PUBLIC_API_URL || 'https://hyper-api.arogyamission.com')+ '/wms';
 
 const IN_REASONS  = ['PRODUCTION', 'PO', 'RETURN'] as const;
 const OUT_REASONS = ['STOLEN', 'DAMAGED', 'SAMPLE'] as const;
