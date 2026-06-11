@@ -43,7 +43,7 @@ async function request<T>(path: string, options: RequestInit = {}): Promise<T> {
 
   if (token) headers['Authorization'] = `Bearer ${token}`;
 
-  const res = await fetch(`${BASE_URL}${path}`, { ...options, headers });
+  const res = await fetch(`${BASE_URL}${path}`, { cache: 'no-store', ...options, headers });
 
   if (!res.ok) {
     const err = await res.json().catch(() => ({ detail: 'Request failed' }));
@@ -276,7 +276,7 @@ export const api = {
         { method: 'PATCH', body: JSON.stringify({ status, ...extra }) },
       ),
     getStats: () => request<WarehouseStats>('/warehouse/stats'),
-    getInventory: () => request<WarehouseInventoryRow[]>('/warehouse/inventory'),
+    getInventory: () => request<WarehouseInventoryRow[]>(`/wms/inventory?t=${Date.now()}`),
     updateStock: (productId: number, stock: number) =>
       request<{ product_id: number; stock: number; available: number }>(`/warehouse/inventory/${productId}`, {
         method: 'PATCH',
