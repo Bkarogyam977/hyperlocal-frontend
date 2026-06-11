@@ -21,7 +21,7 @@ const TRANSACTION_REASONS = ['Initial Stock', 'Restock', 'Damaged', 'Customer Sa
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
-const BASE = process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:8000';
+const BASE = process.env.NEXT_PUBLIC_API_URL || 'https://hyper-api.arogyamission.com';
 
 // Safely handle window check
 function authHeaders(): HeadersInit {
