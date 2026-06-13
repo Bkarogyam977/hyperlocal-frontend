@@ -24,7 +24,7 @@ export default function ProductOverviewPage() {
 
   useEffect(() => {
     //fetch(`http://127.0.0.1:8000/products/${id}`)
-    fetch(`https://hyper-api.arogyamission.com`)
+    fetch(`https://hyper-api.arogyamission.com/products/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setProduct(data);
