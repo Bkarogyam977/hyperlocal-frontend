@@ -388,8 +388,8 @@ function TransactionModal({ onClose, onSuccess, inventoryRows }: {
         destination_vendor_id: form.destination_vendor_id || undefined,
         online_order_id:       form.online_order_id       || undefined,
       };
-      // ─── ISI COFFE KO PURA SAAF CHIPKAO (Line 389-393) ───
-const res = await fetch('http://localhost:8000/inventory/transaction', {
+      // //─── ISI COFFE KO PURA SAAF CHIPKAO (Line 389-393) ───
+const res = await fetch('https://hyper-api.arogyamission.com/inventory/transaction', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json', ...(token ? { Authorization: `Bearer ${token}` } : {}) },
   body: JSON.stringify(payload),
